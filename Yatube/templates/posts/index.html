@@ -18,8 +18,8 @@
           <li> Дата публикации: {{ post.pub_date|date:"d E Y" }}</li>
         </ul>
         <p>{{ post.text }}</p>
-        {% if post.Group %}
-          <a href="{% url 'posts:group_list' post.Group.slug %}">все записи этой группы</a>
+        {% if post.group %}
+          <a href="{% url 'posts:group_list' post.group.slug %}">все записи этой группы</a>
         {% endif %}
         {% if not forloop.last %}
           <hr>
