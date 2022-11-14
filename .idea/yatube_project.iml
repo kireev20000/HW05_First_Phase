@@ -7,4 +7,14 @@
     <orderEntry type="jdk" jdkName="Python 3.9 (yatube_project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/Yatube/templates" />
+        <option value="$MODULE_DIR$/Yatube/templates/includes" />
+        <option value="$MODULE_DIR$/Yatube/templates/posts" />
+      </list>
+    </option>
+  </component>
 </module>
