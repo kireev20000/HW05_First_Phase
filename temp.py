@@ -1,25 +1,25 @@
-def movie_quotes(name):
-    """Возвращает цитаты известных персонажей из фильмов."""
-    quotes = {
-        'Элли': 'Тото , у меня такое ощущение, что мы не в Канзасе!',
-        'Шерлок': 'Элементарно, Ватсон!',
-        'Дарт Вейдер': 'Я — твой отец.',
-        'Thomas A. Anderson': 'Меня зовут Ханс. Ханс Кристиан Андерсен.',
-    }
-    return quotes.get(name, 'Персонаж пока не известен миллионам.')
+import unittest
 
-# Утверждаем, что если в movie_quotes() передать 'Шерлок' -
-# функция вернёт 'Элементарно, Ватсон!'.
-assert movie_quotes('Шерлок') == 'Элементарно, Ватсон!', (
-   "movie_quotes('Шерлок') не вернул ожидаемый результат!")
 
-# Утверждаем, что если в movie_quotes() передать 'Thomas A. Anderson' -
-# функция вернёт 'Меня зовут Нео!'.
-assert movie_quotes('Thomas A. Anderson') == 'Меня. Зовут. Нео!', (
-    "movie_quotes('Thomas A. Anderson') не вернул ожидаемый результат!")
+class TestExample(unittest.TestCase):
+    """Демонстрирует принцип работы тестов"""
+    @classmethod
+    def setUpClass(cls):        
+        print('setUpClass выполнен')
 
-# Утверждаем, что если в movie_quotes передать 'Алиса Плезенс Лидделл' -
-# функция вернёт 'Всё чудесатее и чудесатее!'.
-expected_answer = 'Всё чудесатее и чудесатее!'
-assert movie_quotes('Алиса Плезенс Лидделл') == expected_answer, (
-    "movie_quotes('Алиса Плезенс Лидделл') не вернул ожидаемый результат!")
+    @classmethod
+    def tearDownClass(cls):
+        print('tearDownClass выполнен')
+
+    def setUp(self):
+        print('setUp выполнен')
+
+    def test_one(self): 
+        print('Первый тест выполнен')
+
+    def test_two(self): 
+        print('Второй тест выполнен')
+
+
+if __name__ == '__main__':
+    unittest.main()
