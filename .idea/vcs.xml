@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/hw02_community" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hw03_forms" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hw04_tests" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hw05_final" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/todo" vcs="Git" />
   </component>
 </project>
